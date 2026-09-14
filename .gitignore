@@ -1,0 +1,57 @@
+# Flutter / Dart
+.dart_tool/
+.packages
+build/
+.flutter-plugins
+.flutter-plugins-dependencies
+*.iml
+.idea/
+.vscode/
+
+# macOS
+.DS_Store
+
+# Android
+android/.gradle/
+android/app/debug/
+android/app/profile/
+android/app/release/
+android/local.properties
+android/key.properties
+*.jks
+*.keystore
+
+# iOS
+ios/Pods/
+ios/.symlinks/
+ios/Flutter/Flutter.framework
+ios/Flutter/Flutter.podspec
+ios/Runner.xcworkspace/xcshareddata/
+ios/Flutter/App.framework
+ios/Flutter/Generated.xcconfig
+
+# Platform build outputs
+*.apk
+*.aab
+*.ipa
+*.app
+
+# Misc
+# 其他生态的锁文件不提交，但 Flutter 应用的 pubspec.lock 必须提交 ——
+# 否则不同机器解析出的依赖版本会漂移。
+*.lock
+!pubspec.lock
+
+# Local browser QA artifacts
+.playwright-cli/
+output/playwright/
+
+# Local outputs and credentials
+output/
+test/failures/
+.env
+.env.*
+!.env.example
+*.pem
+*.p12
+package-lock.json
