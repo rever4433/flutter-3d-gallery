@@ -1,0 +1,42 @@
+name: gallery_3d
+description: A 3D model gallery app — browse and interact with architecture, animals, and cartoon models.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  # 状态管理
+  provider: ^6.1.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+
+  # ── 字体 ────────────────────────────────────────────────────────────────
+  # Inter（SIL Open Font License 1.1）作为全站字体。
+  # 中文由 Flutter Web 的 Noto 回退字体渲染，拉丁字符走 Inter。
+  fonts:
+    - family: Inter
+      fonts:
+        - asset: assets/fonts/Inter-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Inter-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Inter-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Inter-Bold.ttf
+          weight: 700
+
+  assets:
+    # 可选的静态封面图。在 model_repository.dart 里用
+    # `coverImage: 'assets/covers/xxx.jpg'` 引用。
+    - assets/covers/
